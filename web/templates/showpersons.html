@@ -1,0 +1,26 @@
+
+    <div ng-controller="MyControl as ctrl">
+        <div class="container">
+        <table class="table">
+            <thead>
+                <tr> 
+                    <td> ID </td> 
+                    <td> Name </td> 
+                    <td> Age </td> 
+                    <td> Details </td>
+                </tr> 
+            </thead>
+            <tbody> 
+                <tr ng-repeat="person in ctrl.persons"> 
+                    <td>{{ person.id}} </td> 
+                    <td>{{ person.name}} </td> 
+                    <td>{{ person.age}} </td> 
+                    <td>
+                        <a href="#/detailed/{{person.id}}/{{person.name}}/{{person.age}}">Details</a>
+
+                    </td>
+                </tr> 
+            </tbody>
+        </table> 
+    </div>
+</div>

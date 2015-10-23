@@ -1,0 +1,19 @@
+<div ng-controller="MyControl as ctrl">
+
+    <form ng-submit="sendPost()">
+ID: <input ng-model="newID"><br>
+Name: <input ng-model="newName"><br>
+Age: <input ng-model="newAge"><br>
+
+        <button type="submit">Submit</button>
+    </form>
+            <div ng-repeat="person in ctrl.persons">
+                <table>
+                <td> {{person.id}} </td>
+                <td> {{person.name}} </td>
+                <td> {{person.age}} </td>
+                
+                </table>
+    
+  </div>
+</div>
